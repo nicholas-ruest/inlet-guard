@@ -1,0 +1,22 @@
+{
+  "request_id": "request-42",
+  "transport": "http",
+  "host": "rebound.attacker.test:8080",
+  "origin": "https://attacker.test",
+  "observed_bytes": 10485761,
+  "received_at_unix": 1800000100,
+  "run_id": "run-2026-10-01",
+  "tool_call": {
+    "tool": "deploy_preview",
+    "arguments": {"environment": "production", "replicas": 20},
+    "side_effecting": true,
+    "approval": {
+      "request_id": "request-42",
+      "run_id": "run-2026-10-01",
+      "tool": "deploy_preview",
+      "arguments_sha256": "4dcf5096110f40a392202f84d71d719b77f43b41576902aaa6141aaa657b576d",
+      "issued_at_unix": 1800000000,
+      "expires_at_unix": 1800000300
+    }
+  }
+}
