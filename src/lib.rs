@@ -575,7 +575,7 @@ mod tests {
             report.normalized_origin.as_deref(),
             Some("https://console.example.test")
         );
-        assert!(report.findings.is_empty());
+        assert_eq!(report.findings, Vec::<Finding>::new());
     }
 
     #[test]
